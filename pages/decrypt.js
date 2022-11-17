@@ -2,8 +2,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
-import { Footer, Header } from "../components";
-import { Layout } from "../components";
+import { Header } from "../components";
 
 
 export default function Decrypt() {
@@ -14,11 +13,7 @@ export default function Decrypt() {
   function renderForm() {
     if (currentStep === 0) {
       return (
-        <div>
-          <div
-            className={""}
-            style={{ paddingTop: "150px" }}
-          ></div>
+        <div className="flex flex-col min-h-screen w-full items-center justify-center">
           <h2 className={""}>
             Step 2.1: Insert the Stego Image with the secret message.
           </h2>
